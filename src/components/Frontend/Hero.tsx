@@ -1,73 +1,52 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client"
 
+import { Pill } from "lucide-react";
 import SearchBar from "./SearchBar";
+import TextTransitions from "./TextTransitions";
+import Link from "next/link";
 
 
 const Hero = () => {
+    const TEXTS = ['Acupunture', 'Massage', 'chiropractor', 'Dental', 'Cosmetic', 'Speech Therapist', 'Occupational Therapist', 'Acunpuncturist', 'Dietitian']
     return (
         <div className="relative bg-white pb-[110px] lg:pt-16 dark:bg-dark">
             <div className="container">
                 <div className="-mx-4 flex flex-wrap">
                     <div className="w-full px-4 lg:w-5/12">
                         <div className="">
-                            <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-black sm:text-[42px] lg:text-[40px] xl:text-5xl">
-                                Kickstart Startup Website with TailGrids
+                            <h1 className="mb-5 text-4xl font-bold !leading-[1.208] flex flex-wrap items-center gap-3 text-black sm:text-[42px] lg:text-[40px] xl:text-5xl">
+                                <span> Book your</span>
+                                <TextTransitions className="text-blue-500 text-4xl capitalize" TEXTS={TEXTS} />
+                                <br />
+                                <span>Session now</span>
                             </h1>
+
                             <p className="mb-8 max-w-[480px] text-base text-body-color dark:text-dark-6">
-                                With TailGrids, business and students thrive together.
-                                Business can perfectly match their staffing to changing demand
-                                throughout the dayed.
+                                Health shouldn't be puzzle, we are cuttin through the B.S to bring you simple, affordable and transparent healthcare.
                             </p>
                             {/* Searchbar here */}
                             <SearchBar />
                             {/* CTA BTNS */}
-                            <ul className="flex flex-wrap items-center">
-                                <li>
-                                    <a
-                                        href="/#"
-                                        className="inline-flex items-center justify-center rounded-md bg-blue-600 px-6 py-3 text-center text-base font-medium text-white hover:bg-blue-600/80 lg:px-7"
-                                    >
-                                        Get Started
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/#"
-                                        className="inline-flex items-center justify-center px-5 py-3 text-center text-base font-medium text-[#464646]"
-                                    >
-                                        <span className="mr-2">
-                                            <svg
-                                                width="24"
-                                                height="25"
-                                                viewBox="0 0 24 25"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <circle cx="12" cy="12.6152" r="12" fill="#3758F9" />
-                                                <rect
-                                                    x="7.99893"
-                                                    y="14.979"
-                                                    width="8.18182"
-                                                    height="1.63636"
-                                                    fill="white"
-                                                />
-                                                <rect
-                                                    x="11.2717"
-                                                    y="7.61523"
-                                                    width="1.63636"
-                                                    height="4.09091"
-                                                    fill="white"
-                                                />
-                                                <path
-                                                    d="M12.0898 14.1606L14.9241 11.0925H9.25557L12.0898 14.1606Z"
-                                                    fill="white"
-                                                />
-                                            </svg>
-                                        </span>
-                                        Download App
-                                    </a>
-                                </li>
+                            <ul className="flex justify-between space-x-3">
+                                <Link href={'/doc'} >
+                                    <button className="border text-sm font-medium p-4 border-blue-500 hover:bg-blue-500 hover:text-white"> Need Doctor Urgently</button>
+                                </Link>
+                                <Link href={'/refill'} className="border flex text-sm font-medium items-center bg-blue-500 hover:border-blue-500 hover:bg-white p-4 hover:text-black text-white">
+                                    <Pill className="h-5 w-5 flex-shrink-0 mr-2" />
+                                    <span>I Need a Prescription Refill</span>
+                                </Link>
                             </ul>
+                            <div className="flex py-4 pt-8 gap-4">
+                                <div className="flex flex-col items-center justify-center">
+                                    <span className="font-bold text-gray-600">600</span>
+                                    <span className="text-sm text-gray-600">Active Specialist</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-center">
+                                    <span className="font-bold text-gray-600">1800</span>
+                                    <span className="text-sm text-gray-600">Active Patient</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="hidden px-4 lg:block lg:w-1/12"></div>
