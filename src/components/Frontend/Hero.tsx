@@ -8,9 +8,9 @@ import Link from "next/link";
 
 
 const Hero = () => {
-    const TEXTS = ['Acupunture', 'Massage', 'chiropractor', 'Dental', 'Cosmetic', 'Speech Therapist', 'Occupational Therapist', 'Acunpuncturist', 'Dietitian']
+    const TEXTS = ['Acupunture Doctor', 'Massage Doctor', 'chiropractor', 'Dental Doctor', 'Cosmetic Doctor', 'Speech Therapist', 'Occupational Therapist', 'Acunpuncturist', 'Dietitian Doctor']
     return (
-        <div className="relative bg-white pb-[110px] lg:pt-16 dark:bg-dark">
+        <div className="relative bg-white pb-[110px] lg:pt-16">
             <div className="container">
                 <div className="-mx-4 flex flex-wrap">
                     <div className="w-full px-4 lg:w-5/12">

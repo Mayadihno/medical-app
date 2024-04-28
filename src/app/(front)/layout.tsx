@@ -7,11 +7,13 @@ const Layout = ({ children }: { children: ReactNode }) => {
         <div>
             <Navbar />
             <div className=" bg-gray-100">
-                <div className="max-w-6xl mx-auto  p-4">
+                <div className=" mx-auto p-4 fixed bg-slate-200 w-full top-20 left-0 right-0 z-50">
                     <MegaMenu />
                 </div>
             </div>
-            {children}
+            <div className="mt-[180px]">
+                {children}
+            </div>
         </div>
     )
 }
