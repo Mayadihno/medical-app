@@ -1,6 +1,6 @@
 import { UserRole } from "@prisma/client";
 
-type ServiceProp = {
+export type ServiceProp = {
   title: string;
   image: string;
   slug: string;
