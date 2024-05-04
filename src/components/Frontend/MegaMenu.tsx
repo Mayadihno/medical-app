@@ -9,6 +9,7 @@ import {
     NavigationMenuList,
     NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
+import { usePathname } from "next/navigation"
 
 const components: { title: string; href: string; description: string }[] = [
     {
@@ -150,6 +151,8 @@ const megaMenu = [
     }
 ]
 export default function MegaMenu() {
+    // const pathname = usePathname();
+    // if (pathname === '/login' || '/register') return null;
     return (
         <NavigationMenu>
             <NavigationMenuList className="space-x-8">

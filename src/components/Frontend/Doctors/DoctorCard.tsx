@@ -91,7 +91,7 @@ const DoctorCard = ({ isInPerson = false }: { isInPerson?: boolean }) => {
                             </Link>
                         ))
                     }
-                    <Link className='bg-blue-900 text-white text-sm py-2 px-3 text-nowrap' href='/doctors/slug'>More times</Link>
+                    <Link className='bg-blue-900 text-white text-sm py-2 px-3 text-nowrap' href='/doctors/slug'>More time</Link>
                 </div>
             </div>
         </div >

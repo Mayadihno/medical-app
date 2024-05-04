@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react'
+import Avialability from '../Avialability'
 
 const DoctorDetails = () => {
     const [active, setActive] = useState(2)
@@ -20,7 +21,7 @@ const DoctorDetails = () => {
                 {
                     active === 2 && (
                         <div className="">
-                            Availability Details Component
+                            <Avialability />
                         </div>
                     )
                 }

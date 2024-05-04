@@ -4,7 +4,7 @@ import React from 'react'
 
 const page = () => {
     return (
-        <div className="bg-slate-50 min-h-screen py-10 mt-[-28px]">
+        <div className="bg-slate-50 min-h-screen py-10 mt-[-28px] mb-[150px]">
             <div className="border border-gray-200 mx-auto max-w-4xl bg-white rounded-md shadow-md">
                 <div className="py-8 px-6">
                     <div className="flex items-center justify-between">

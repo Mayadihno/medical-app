@@ -75,3 +75,16 @@
       min-height: 100vh;
     }
   }
+
+  .linear-bg{
+    background: url('/login-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .linear-bg-2 {
+       background: url('/register-image-2.jpg');
+       background-repeat: no-repeat;
+       background-size: cover;
+       /* background-position: center; */
+}
