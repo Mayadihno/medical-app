@@ -8,21 +8,21 @@ import Link from "next/link";
 
 
 const Hero = () => {
-    const TEXTS = ['Acupunture Doctor', 'Massage Doctor', 'chiropractor', 'Dental Doctor', 'Cosmetic Doctor', 'Speech Therapist', 'Occupational Therapist', 'Acunpuncturist', 'Dietitian Doctor']
+    const TEXTS = ['Acupunture', 'Massage', 'chiropractor', 'Dental', 'Cosmetic']
     return (
-        <div className="relative bg-white pb-[110px] lg:pt-16">
+        <div className="relative bg-white dark:bg-zinc-800 dark:text-white pb-[110px] lg:pt-16">
             <div className="container">
                 <div className="-mx-4 flex flex-wrap">
                     <div className="w-full px-4 lg:w-5/12">
-                        <div className="">
-                            <h1 className="mb-5 text-4xl font-bold !leading-[1.208] flex flex-wrap items-center gap-3 text-black sm:text-[42px] lg:text-[40px] xl:text-5xl">
+                        <div className=" dark:text-white">
+                            <h1 className="mb-5 text-4xl font-bold dark:text-white !leading-[1.208] flex flex-wrap items-center gap-3 text-black sm:text-[42px] lg:text-[40px] xl:text-5xl">
                                 <span> Book your</span>
                                 <TextTransitions className="text-blue-500 text-4xl capitalize" TEXTS={TEXTS} />
                                 <br />
                                 <span>Session now</span>
                             </h1>
 
-                            <p className="mb-8 max-w-[480px] text-base text-body-color dark:text-dark-6">
+                            <p className="mb-8 max-w-[480px] text-base">
                                 Health shouldn't be puzzle, we are cuttin through the B.S to bring you simple, affordable and transparent healthcare.
                             </p>
                             {/* Searchbar here */}
@@ -37,14 +37,14 @@ const Hero = () => {
                                     <span>I Need a Prescription Refill</span>
                                 </Link>
                             </ul>
-                            <div className="flex py-4 pt-8 gap-4">
+                            <div className="flex py-4 pt-8 gap-4 dark:text-white">
                                 <div className="flex flex-col items-center justify-center">
-                                    <span className="font-bold text-gray-600">600</span>
-                                    <span className="text-sm text-gray-600">Active Specialist</span>
+                                    <span className="font-bold text-gray-600 dark:text-white">600</span>
+                                    <span className="text-sm text-gray-600 dark:text-white">Active Specialist</span>
                                 </div>
-                                <div className="flex flex-col items-center justify-center">
-                                    <span className="font-bold text-gray-600">1800</span>
-                                    <span className="text-sm text-gray-600">Active Patient</span>
+                                <div className="flex flex-col items-center justify-center dark:text-white">
+                                    <span className="font-bold text-gray-600 dark:text-white">1800</span>
+                                    <span className="text-sm text-gray-600 dark:text-white">Active Patient</span>
                                 </div>
                             </div>
                         </div>

@@ -6,6 +6,7 @@ import {
     XMarkIcon,
 } from '@heroicons/react/24/outline'
 import Link from 'next/link'
+import ModeToggle from '../ModeToggle'
 
 
 function classNames(...classes: any) {
@@ -54,6 +55,9 @@ export default function Navbar() {
                         Log in <span aria-hidden="true">&rarr;</span>
                     </Link>
                 </div>
+                <div className=" ml-5">
+                    <ModeToggle />
+             </div>
             </nav>
             <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                 <div className="fixed inset-0 z-10" />

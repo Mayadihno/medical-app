@@ -8,8 +8,8 @@ export type singleImageBrand = {
 const Brands = () => {
     return (
         <>
-            <section className=" py-10 dark:bg-dark lg:py-[10px]">
-                <h2 className=" text-center pb-6">Trusted By</h2>
+            <section className=" py-10 dark:bg-white lg:py-[10px]  dark:py-16">
+                <h2 className=" text-center pb-6 dark:text-black">Trusted By</h2>
                 <div className="container mx-auto">
                     <div className="flex flex-wrap -mx-4">
                         <div className="w-full px-4">
